@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\DSA1\L과제2_이승호"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\Java File\P13_Hashing.zip"/>
+			<item value="C:\Users\LeeSeungHo\Downloads\dsa1_2.zip"/>
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\Java File\P10_SearchTree.zip"/>
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\Java File\P09_BinaryTree.zip"/>
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\P07_Stack_Queue.zip"/>
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\과제\s과제3_실습_순차탐색.zip"/>
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\과제\s과제4_실습_BinSearch.zip"/>
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\P06_BinSearch.zip"/>
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\P05_SeqSearch.zip"/>
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\과제\s과제2_이승호.zip"/>
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\SListStudent.zip"/>
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\P04_xList.zip"/>
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\P02_Recursion.zip"/>
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\과제\s과제1_이승호.zip"/>
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\과제\StudentArrayListTest.zip"/>
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\P03_ArrayList.zip"/>
+			<item value="C:\Users\LeeSeungHo\Desktop\자료\3학년\2학기\자료구조 및 알고리즘1\P01_JavaBasic.zip"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
+</section>

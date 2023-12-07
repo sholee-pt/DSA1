@@ -1,0 +1,128 @@
+package PerformanceAnalysis;
+
+// Adjust: ReadMe
+// Author : Lee SeungHo @ DonggukUniversity
+// Date : 2023. 11. 13.
+// Revision History
+// - 알고리즘 성능 측정 (수행시간)
+// - 큰 수에 컴마 포함 메소드 - m.formatNumber()
+
+import java.io.*;
+import java.util.*;
+import java.text.DecimalFormat;
+
+public class Main {
+	// Adjust: 실습용 축소 데이터 셋
+	// private static int sizeofData[] = {5, 10, 100, 1000, 3000, 5000, 7000, 10000, 20000};
+
+	// Adjust: 과제용 데이터 셋
+	private static int sizeofData[] = {5, 10, 100, 1000, 10000, 25000, 50000, 75000, 100000};
+
+    // 임의구간 상세 측정용 데이터 셋
+	// private static int sizeofData[] = {5, 10000, 15000, 25000, 30000, 35000, 40000, 45000, 50000};
+	
+	// 시간과 공간 측정결과를 저장하기 위한 배열
+	private static int index = 0;   // Index of sizeofData
+	private static String timeResult[] = {"", "", "", "", "", "", "", "", ""};
+
+	// 1회의 측정결과를 CSV 형식으로 파일에 출력하는 메소드
+	public static void writeCSV(String path, String data) throws IOException {
+		// 파일 위치와 데이터를 입력받음
+		File csv = new File(path); // 파일 위치 바탕으로 생성
+		BufferedWriter bw = new BufferedWriter(new FileWriter(csv, true));
+		// 파일 형식과 이어쓰기 여부
+		bw.write(data); // 데이터를 쓰고
+		bw.newLine(); // 줄바꿈
+		bw.flush();
+		bw.close();
+	}
+	
+	// 측정결과의 타이틀을 파일에 출력하는 메소드
+	public static void writeTitle(String path, String data) throws IOException {
+		S_Measure m = new S_Measure();
+		for (int i=0; i < sizeofData.length; i++) {
+    		data = data + "|" + m.formatNumber(sizeofData[i]);
+    	}
+		writeCSV(path, data);	
+	}
+	
+	// 전체 시간 측정결과를 CSV형식으로 전환하여 파일에 출력하는 메소드
+	public static void writeTimeResult(String path, String data) throws IOException {
+		for (int i=0; i < timeResult.length; i++) {
+    		data = data + "|" + timeResult[i];
+    	}
+		writeCSV(path, data);	
+	}
+	
+    public static void main(String[] args) throws IOException {
+		
+		S_Measure m = new S_Measure();
+		SG_GenData g = new SG_GenData();
+		
+		// Adjust: Output File
+		String testobj = "Insertion Sort";
+		String path = "C:\\임시\\paout_" + testobj + ".txt";
+		File csv = new File(path); // 파일 위치 바탕으로 생성
+		
+		// 출력 파일 초기화 - 기존 내용 지우기
+		BufferedWriter bw = new BufferedWriter(new FileWriter(csv, false));
+		
+    	for (int k: sizeofData) {    		
+    		// Adjust: Data Generation
+    		int direction = 0;  // 순방향 1(초선), 랜덤 0(평균), 역방향 -1(최악)
+    		// SG_StringData[] a = g.genStringData(k, direction);
+    		SG_IntegerData[] a = g.genIntegerData(k, direction);
+    		
+    		int[] d = new int[k];
+    		/*System.out.print("생성 결과: ");
+    		for (int i = 0; i < a.length; i++) {
+    			System.out.printf(a[i].get()+"  ");
+    			d[i] = a[i].get();
+    		}
+    		System.out.println("\n");*/
+
+    		int key = d[(int) (Math.random() * k)];
+    		  		
+    		long startTime = m.startTimer();
+    		System.out.println("startTime = "+m.formatNumber(startTime));
+		
+    		// Adjust: 분석 대상 알고리즘  
+    		// BinSearch.binSearch(d, k, key);
+    		Selection.sort(a);
+    		//Insertion.sort(a);
+    		//Shell.sort(a);
+    		//Heap.sort(a);
+    		//Merge.sort(a);
+    		//Quick.sort(a);
+    		
+    		long elapsedTime = m.stopTimer(startTime);
+    		System.out.println("elapsedTimer = "+m.formatNumber(elapsedTime));
+		
+    		/*
+    		System.out.print("정렬 결과: ");
+    		for (int i = 0; i < a.length; i++) {
+    			System.out.printf(a[i].get()+"  ");
+    		}
+    		System.out.println("\n");
+    		*/
+    		
+    		// 시간 측정결과를 nSec -> uSec으로 전환하고, ','를 삽입
+    		timeResult[index] = m.formatNumber(elapsedTime/1000);
+    		
+    		// 측정결과를 화면에 출력
+    		System.out.println("SizeOfData : " + m.formatNumber(k) + " 개");
+    		System.out.println("Key : " + key);
+    		System.out.println("elapsedTime : " + timeResult[index] + " uSec");
+    		System.out.println("");
+    		
+    		index++;
+    	}
+		// Adjust: CSV file 출력 - Time Result
+    	writeCSV(path, "A.2 " + testobj + " 알고리즘 수행시간 분석");
+		writeTitle(path, "구분");
+    	writeTimeResult(path, "시간");  // 정렬 데이터
+    	writeCSV(path, "------------------------------------------\n");
+			
+    	System.out.println("~~~ 알고리즘 성능분석 완료 ~~~");
+	}
+} 	

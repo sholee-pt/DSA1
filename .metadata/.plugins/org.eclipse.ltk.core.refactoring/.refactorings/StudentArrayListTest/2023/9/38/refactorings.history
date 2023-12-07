@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;StudentArrayList&apos; to &apos;s과제2_이승호/src&apos;&#x0D;&#x0A;- Original project: &apos;StudentArrayListTest&apos;&#x0D;&#x0A;- Destination element: &apos;s과제2_이승호/src&apos;&#x0D;&#x0A;- Original element: &apos;StudentArrayListTest/src/StudentArrayList&apos;" description="Copy package" destination="=s과제2_이승호/src" element1="/src&lt;StudentArrayList" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1695081855512" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;BinaryTree&apos; to &apos;s과제5_이승호/src&apos;&#x0D;&#x0A;- Original project: &apos;P09_BinaryTree&apos;&#x0D;&#x0A;- Destination element: &apos;s과제5_이승호/src&apos;&#x0D;&#x0A;- Original element: &apos;P09_BinaryTree/src/BinaryTree&apos;" description="Copy package" destination="=s과제5_이승호/src" element1="/src&lt;BinaryTree" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1698642785037" version="1.0"/>
+</session>

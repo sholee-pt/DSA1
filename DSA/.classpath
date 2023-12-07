@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="2-JavaBaic"/>
+	<classpathentry kind="src" path="4-xLists"/>
+	<classpathentry kind="src" path="Tester"/>
+	<classpathentry kind="src" path="6-BinSearch"/>
+	<classpathentry kind="src" path="5-SeqSearch"/>
+	<classpathentry kind="src" path="7-StackQueue"/>
+	<classpathentry kind="src" path="9-BinaryTree"/>
+	<classpathentry kind="src" path="10-SearchTree"/>
+	<classpathentry kind="src" path="13-Hashing"/>
+	<classpathentry kind="src" path="12-PerformanceAnalysis"/>
+	<classpathentry kind="src" path="11-Sorting"/>
+	<classpathentry kind="src" path="3-ArrayList"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
